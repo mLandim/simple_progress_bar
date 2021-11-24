@@ -4,3 +4,4 @@
 /dist
 /src/simple_progress_bar.egg-info
 __pycache__
+.tox

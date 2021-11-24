@@ -5,7 +5,7 @@ with open('README.md', 'r') as readme:
 
 setup(
   name = 'simple_progress_bar',
-  version = '0.0.2',  
+  version = '0.0.3',  
   license='MIT',        
 
   description = 'Simple progress bar for your console apps in python', 
@@ -23,7 +23,7 @@ setup(
   },
 
   python_requires=">=3.6",
-  keywords = ['PROGRESS', 'BAR', 'PROGRESSBAR', 'CONSOLE', 'TERMINAL'],   
+  keywords = ['progress', 'bar', 'progress-bar', 'console', 'terminal'],   
   classifiers=[
     'Development Status :: 3 - Alpha',      # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
     'Intended Audience :: Developers',      
@@ -34,5 +34,12 @@ setup(
     'Programming Language :: Python :: 3.7',
     'Operating System :: OS Independent'
   ],
+  extras_require ={
+    "dev":[
+      "tox>=3.24",
+      "check-manifest>=0.47"
+      "wheel"
+    ]
+  }
 
 )
