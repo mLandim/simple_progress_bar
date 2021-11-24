@@ -3,5 +3,4 @@
 /build
 /dist
 /src/simple_progress_bar.egg-info
-MANIFEST
-PyPI.md
+__pycache__
