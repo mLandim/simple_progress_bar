@@ -1,3 +1,5 @@
 /venv
 /dist
+/simple_progress_bar.egg-info
 MANIFEST
+PyPI.md
