@@ -6,7 +6,7 @@ It should be used inside a for loop.
 
 ## Installation
 
-pip install simple-progress-bar
+`pip install simple-progress-bar`
 
 ## Usage
 

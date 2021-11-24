@@ -1,5 +1,5 @@
 
-def print_progressbar(value: int, max_value: int, char: str = '|', blank: str = ' ', show_value: bool = True, description: str = '', width_bar: int = 100, mult: int = 1):
+def print_progressbar(value: int, max_value: int, char: str = '|', blank: str = ' ', show_value: bool = True, description: str = '', width_bar: int = 100, multiply_char: int = 1):
     """
     This function will print a progress bar
     It should be used inside a for loop 
@@ -21,12 +21,12 @@ def print_progressbar(value: int, max_value: int, char: str = '|', blank: str = 
         text description for each increment (default is '')
     width_bar : int, optional
         width of the progress bar - char count (default is 100)
-    mult : int, optional
+    multiply_char : int, optional
         multiply char for each increment in the progress bar (default is 1)
 
     """
-    char_base = char * mult
-    char_blank = blank * mult
+    char_base = char * multiply_char
+    char_blank = blank * multiply_char
     bars = []
     limit = width_bar 
 
@@ -46,6 +46,8 @@ def print_progressbar(value: int, max_value: int, char: str = '|', blank: str = 
     final_string = f'|{b}| -> {int(p)} % {description}' if show_value else f'|{b}|'
     
     print(f'\r {final_string}', end='')
+    if value == max_value:
+        print('\n')
 
 
 if __name__ == "__main__":

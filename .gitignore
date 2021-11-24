@@ -1,5 +1,7 @@
+/bkp
 /venv
+/build
 /dist
-/simple_progress_bar.egg-info
+/src/simple_progress_bar.egg-info
 MANIFEST
 PyPI.md
