@@ -5,7 +5,7 @@ with open('README.md', 'r') as readme:
 
 setup(
   name = 'simple_progress_bar',
-  version = '0.0.3',  
+  version = '0.0.4',  
   license='MIT',        
 
   description = 'Simple progress bar for your console apps in python', 
