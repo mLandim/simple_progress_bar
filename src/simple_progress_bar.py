@@ -1,3 +1,4 @@
+import sys
 
 def print_progressbar(value: int, max_value: int, char: str = '|', blank: str = ' ', show_value: bool = True, description: str = '', width_bar: int = 100, multiply_char: int = 1):
     """
@@ -46,6 +47,8 @@ def print_progressbar(value: int, max_value: int, char: str = '|', blank: str = 
     final_string = f'|{b}| -> {int(p)} % {description}' if show_value else f'|{b}|'
     
     print(f'\r {final_string}', end='')
+    sys.stdout.flush()
+
     if value == max_value:
         print('\n')
 
