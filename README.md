@@ -20,14 +20,14 @@ def test_function():
     df_test = pd.read_excel('test_file_read.xls')
     df_test_size = len(df_dles.index)
 
-    # iterate through anything
+    # iterate through anything - here is a pandas dataframe
     for index, row in df_test.iterrows():
         index_fix = index + 1
         result = 'Test' 
         df_test.loc[index, 'result'] = result
 
         # Printing the progress bar
-        print_progressbar(index_fix, df_test_size, blank='-', description=f"Testing: Line {index}")
+        print_progressbar(index_fix, df_test_size, blank='-', description=f"Testing: Line {index_fix} of {df_test_size}")
 
     df_test.to_excel('test_file_write.xls')
 
